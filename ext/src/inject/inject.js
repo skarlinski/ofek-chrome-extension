@@ -33,7 +33,7 @@ chrome.extension.sendMessage({}, function(response) {
         //});
         const url = window.location.toString();     
         if(url.includes('Launcher')) {
-            selectTaskPage(true);
+            selectTaskPage(false);
         }
         else if( url.includes('summary')) {
             const urlParams = new URLSearchParams(window.location.search);
